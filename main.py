@@ -8,11 +8,11 @@ from torchvision.transforms import ToTensor,Resize
 import uvicorn
 app = FastAPI()
 
-@app.get("/")
-def root():
-    return {"message": "Hello World"}
+# @app.get("/")
+# def root():
+#     return {"message": "Hello World"}
 
-@app.post("/send")
+@app.post("/send/")
 def send(img:UploadFile):
     content = img.file.read()
     img = Image.open(io.BytesIO(content)).convert(mode="L")
