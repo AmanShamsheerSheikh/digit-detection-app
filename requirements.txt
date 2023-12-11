@@ -1,0 +1,9 @@
+fastapi==0.104.1
+matplotlib==3.5.3
+numpy==1.21.6
+Pillow==10.1.0
+Requests==2.31.0
+torch==2.1.1
+torchvision==0.16.1
+python-multipart
+uvicorn
